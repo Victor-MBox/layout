@@ -1,0 +1,281 @@
+/* Переменные */
+$main-gradient: linear-gradient(90deg, #6cb644 0%, #82ca2c 100%);
+$main-color: #76b926;
+$hover-main-color: #649c1f;
+$background: #f4f4f4;
+$text-black: #37454a;
+$decor: #dfdfdf;
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'proximanova', sans-serif;
+	font-weight: 300;
+	line-height: 1.2;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+main {
+	overflow: hidden;
+}
+
+.my-m {
+	&_10 {
+		margin: 10px 0;
+	}
+	&_b20 {
+		margin-bottom: 20px;
+	}
+}
+
+/* //* main-section */
+.main-section {
+	min-height: 509px;
+	background: $background;
+	&__navigation {
+		margin: 20px 0 30px 0;
+	}
+	&__h1 {
+		margin-bottom: 60px;
+	}
+	&__text {
+		margin-bottom: 30px;
+	}
+	button {
+		margin-bottom: 30px;
+	}
+}
+
+.navigation {
+	display: flex;
+	align-items: center;
+	&__home {
+		margin-right: 8px;
+	}
+	svg {
+		margin-right: 8px;
+	}
+	&__title {
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 22px;
+		color: $text-black;
+		opacity: 0.6;
+	}
+}
+
+.h1 {
+	color: $text-black;
+	font-size: 42px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 50px;
+	&__green {
+		color: $main-color;
+	}
+}
+
+.text {
+	color: rgba(55, 69, 74, 0.6);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 22px;
+	&__italics {
+		font-style: italic;
+		color: $text-black;
+	}
+	&_more {
+		color: $text-black;
+		font-size: 18px;
+		line-height: 30px;
+	}
+}
+
+/* //* second-section */
+
+.second-section {
+	margin-bottom: 60px;
+	&__title {
+		text-align: center;
+		margin: 60px 0 67px;
+	}
+	&__sub-title {
+		margin-bottom: 30px;
+	}
+	&__btn {
+		margin-bottom: 60px;
+		.btn {
+			margin: 0 auto;
+		}
+	}
+	&__list {
+		margin-left: 10px;
+	}
+}
+
+.title {
+	color: $text-black;
+	font-size: 28px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 36px;
+}
+
+.icon-card {
+	border-radius: 15px;
+	background: $background;
+	text-align: center;
+	min-height: 190px;
+
+	display: flex;
+	flex-direction: column;
+
+	padding: 65px 20px 20px;
+	margin-bottom: 67px;
+	&__icon {
+		margin: 0 auto;
+		width: 90px;
+		height: 90px;
+
+		background: $main-color;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 90px;
+		border: 8px solid #fff;
+
+		position: absolute;
+		top: -44px;
+		left: 50%;
+		transform: translateX(-50%);
+		box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 16%) inset;
+	}
+	&__text {
+		color: $text-black;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 30px;
+		text-transform: uppercase;
+		span {
+			color: $main-color;
+		}
+	}
+}
+
+.list {
+	ul {
+		list-style: inside;
+		li {
+			color: $text-black;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 30px;
+		}
+	}
+	ol {
+		list-style: revert;
+		margin-left: 20px;
+		li {
+			color: $text-black;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 30px;
+		}
+	}
+}
+
+/* //* third-section */
+.third-section {
+	background: $background;
+	padding: 50px 0;
+	&__sub-title {
+		margin-bottom: 30px;
+	}
+	&__text {
+		color: rgba(55, 69, 74, 0.60);
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 22px;
+	}
+}
+
+.owl-carousel {
+	margin-bottom: 20px;
+	.owl-stage-outer {
+		padding: 0 6px;
+		margin: 0 -3px;
+	}
+	.item {
+		position: relative;
+		max-width: 370px;
+
+		box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+		border-radius: 8px;
+		overflow: hidden;
+		margin-bottom: 10px;
+		img {
+			border-radius: 8px 8px 0 0;
+		}
+		&__content {
+			color: $text-black;
+			background: #fff;
+			height: 100%;
+			padding: 25px 25px 50px 25px;
+		}
+		&__title {
+			font-size: 20px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 20px;
+			margin-bottom: 35px;
+		}
+		&__text {
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 22px;
+		}
+	}
+}
+
+/* //* fourth-section */
+.fourth-section {
+	padding-top: 60px;
+	.row {
+		background: $background;
+		border-radius: 20px;
+		border: 1px solid $decor;
+		margin-bottom: 30px;
+	}
+	&__content {
+		padding: 30px;
+	}
+	&__img {
+		padding-right: 0;
+	}
+	&__sub-title {
+		margin-bottom: 30px;
+	}
+	&__list {
+		margin-bottom: 30px;
+	}
+	&__btn {
+		margin-bottom: 55px;
+		.btn {
+			margin: 0 auto;
+		}
+	}
+}
